@@ -1,0 +1,35 @@
+﻿@model HearingInterviewTest.Models.SwPersonDetailVM
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Charachter detail</title>
+</head>
+<body>
+    <div> 
+        <h2>Star Wars Character</h2>
+        <fieldset>
+            <legend>Details</legend>
+            <div> @Html.LabelFor(m => m.name) @Html.DisplayFor(m => m.name)</div>
+            <div> @Html.LabelFor(m => m.gender) @Html.DisplayFor(m => m.gender)</div>
+            <div> @Html.LabelFor(m => m.height) @Html.DisplayFor(m => m.height)</div>
+            <div> @Html.LabelFor(m => m.mass) @Html.DisplayFor(m => m.mass)</div>
+            <div> @Html.LabelFor(m => m.skin_color) @Html.DisplayFor(m => m.skin_color)</div>
+            <div> @Html.LabelFor(m => m.birth_year) @Html.DisplayFor(m => m.birth_year)</div>
+            <div> @Html.LabelFor(m => m.homeworld) @Html.DisplayFor(m => m.homeworld)</div>
+            <div> @Html.LabelFor(m => m.films) @Html.DisplayFor(m => m.films)</div>
+            @*@Html.DisplayForModel()*@
+        </fieldset>
+    </div>
+        <input type="button" value="Back to list" onclick="location.href='@Url.Action("Index", "SwPeople" )'" />
+   <div>
+
+    </div>
+</body>
+</html>
